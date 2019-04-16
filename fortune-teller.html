@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Fortune Teller</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Fortune Teller</h2>
+      </div>
+      <form id="fortune">
+        <div class="form-group">
+          <p>Here are some unlucky events that occured in the last year:</p>
+          <input type="checkbox" name="unlucky" value="house-robbery">Breaking in someone's house<br>
+          <input type="checkbox" name="unlucky" value="weapon-handling">Handling a weapon<br>
+          <input type="checkbox" name="unlucky" value="car-stealing">Stealing a car<br>
+          <input type="checkbox" name="unlucky" value="losing-video-games">Being grounded<br>
+          <input type="checkbox" name="unlucky" value="breaking-the-rules">Rule breaker<br>
+          <input type="checkbox" name="unlucky" value="injuring-someone">Hitting someone<br>
+          <input type="checkbox" name="unlucky" value="drunk-driving">Drinking alcohol and driving<br>
+          <input type="checkbox" name="unlucky" value="smoking">Having a cigarette<br>
+        </div>
+        <div class="form-group">
+          <p>Here are some lucky events that occured in the last year:</p>
+          <input type="checkbox" name="lucky" value="easter-egg-hunting">Hunting easter eggs<br>
+          <input type="checkbox" name="lucky" value="fourth-of-july">Celebrating Independence Day<br>
+          <input type="checkbox" name="lucky" value="halloween">Going trick or treating<br>
+          <input type="checkbox" name="lucky" value="christmas">Opening presents under the tree<br>
+          <input type="checkbox" name="lucky" value="thanksgiving">Eating turkey with friends and family<br>
+          <input type="checkbox" name="lucky" value="valentines-day">Writing a valentines day card<br>
+          <input type="checkbox" name="lucky" value="st-paddy's-day">Wearing green clothing<br>
+          <input type="checkbox" name="lucky" value="money-earnings">Earning money from jobs<br>
+        </div>
+        <button type="submit" class="btn">Read Fortune</button>
+      </form>
+
+      <div id="unlucky">
+        <p>Your fortune is unlucky</p>
+        <p>Maybe you need to think more lucky fortunes</p>
+      </div>
+      <div id="lucky">
+        <p>Your fortune is lucky</p>
+        <p>You should be proud of yourself</p>
+      </div>
+      <div id="inbetween">
+        <p>Your fortune is inbetween</p>
+        <p>You are so close</p>
+      </div>
+    </div>
+  </body>
+</html>
